@@ -14,6 +14,18 @@ class QuoteView: UIView {
 	@IBOutlet weak var quoteLabel: UILabel!
 	@IBOutlet weak var quoteAuthor: UILabel!
 	
+//	init(quote:Quote) {
+//		quoteAuthor.text = quote.author
+//		quoteLabel.text = quote.quote
+//		quoteImage.image = quote.image
+//		super.init(frame: CGRect.zero)
+//	}
+
+//	required init?(coder aDecoder: NSCoder) {
+//		fatalError("init(coder:) has not been implemented")
+//	}
+	
+	
 	func setupWithQuote(quote:Quote) -> () {
 		quoteAuthor.text = quote.author
 		quoteLabel.text = quote.quote

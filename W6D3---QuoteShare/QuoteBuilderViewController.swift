@@ -12,11 +12,9 @@ import AlamofireImage
 class QuoteBuilderViewController: UIViewController {
 
 	var quote: Quote?
-	
-	
 	var myQuoteView:QuoteView!
-	
 	weak var delegate: HomeViewController!
+	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,4 +53,6 @@ class QuoteBuilderViewController: UIViewController {
 			}
 		}
 	}
+	
+	
 }

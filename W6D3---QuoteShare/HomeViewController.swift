@@ -40,6 +40,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		return cell
 	}
 	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		socialShare(sharingImage: snapshot(quote: quoteArray[indexPath.row]))
+	}
+	
 	func createNewQuote(author:String, quote:String, image:UIImage){
 		
 		let newQuote = Quote(author: author, quote: quote, image: image)
@@ -53,6 +57,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 			let vc = segue.destination as! QuoteBuilderViewController
 			vc.delegate = self
 		}
+	}
+	
+	func snapshot(quote:Quote) -> UIImage {
+		
+		let quoteView = QuoteView.instanceFromNib()
+		quoteView.setupWithQuote(quote: quote)
+		quoteView.frame = view.bounds
+		
+		UIGraphicsBeginImageContextWithOptions(quoteView.bounds.size, true, 0)
+		quoteView.drawHierarchy(in: quoteView.bounds, afterScreenUpdates: true)
+		let image = UIGraphicsGetImageFromCurrentImageContext();
+		UIGraphicsEndImageContext()
+		
+		return image!;
+	}
+	
+	func socialShare(sharingImage: UIImage?) {
+		var sharingItems = [AnyObject]()
+		
+		if let image = sharingImage {
+			sharingItems.append(image)
+		}
+		
+		let activityViewController = UIActivityViewController(activityItems: sharingItems, applicationActivities: nil)
+		self.present(activityViewController, animated: true, completion: nil)
 	}
 }
 

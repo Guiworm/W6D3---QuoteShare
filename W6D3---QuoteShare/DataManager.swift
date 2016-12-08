@@ -35,7 +35,7 @@ func getQuote(completionBlock: @escaping (String, String)->())  -> (){
 
 func getImage(completionBlock: @escaping (UIImage) ->()) -> (){
 	
-	Alamofire.request("https://unsplash.it/200/300/?random").responseImage { response in
+	Alamofire.request("http://lorempixel.com/200/300/").responseImage { response in
 		
 		if let image = response.result.value {
 			completionBlock(image)
