@@ -20,4 +20,7 @@ class QuoteView: UIView {
 		quoteImage.image = quote.image
 	}
 
+	class func instanceFromNib() -> QuoteView {
+		return UINib(nibName: "QuoteView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! QuoteView
+	}
 }

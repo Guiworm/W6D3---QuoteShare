@@ -114,10 +114,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y30-08-YPf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIq-yf-237">
                                 <rect key="frame" x="0.0" y="551" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -147,44 +143,9 @@
                                     <action selector="save:" destination="dWB-ex-fbL" eventType="touchUpInside" id="elf-KB-jsR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-ql-SnU">
-                                <rect key="frame" x="16" y="134" width="343" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="Xqe-i9-kmN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.86733605858630169" green="0.86929072002158425" blue="0.89911858974358971" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkz-uc-PcG">
-                                <rect key="frame" x="16" y="205" width="343" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="trI-Nj-pHv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.86563555120826963" green="0.86758638031563329" blue="0.89735576923076921" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Tkz-uc-PcG" firstAttribute="top" secondItem="MTO-ql-SnU" secondAttribute="bottom" constant="40" id="19w-cz-e4r"/>
-                            <constraint firstItem="MTO-ql-SnU" firstAttribute="leading" secondItem="Fwr-xH-y16" secondAttribute="leadingMargin" id="LTm-SU-Iuw"/>
-                            <constraint firstItem="MTO-ql-SnU" firstAttribute="trailing" secondItem="Fwr-xH-y16" secondAttribute="trailingMargin" id="OyG-rc-EYd"/>
-                            <constraint firstItem="Tkz-uc-PcG" firstAttribute="trailing" secondItem="Fwr-xH-y16" secondAttribute="trailingMargin" id="Snj-fR-M1O"/>
-                            <constraint firstItem="MTO-ql-SnU" firstAttribute="top" secondItem="IQk-e1-HIY" secondAttribute="bottom" constant="70" id="VLZ-GX-32T"/>
-                            <constraint firstItem="Tkz-uc-PcG" firstAttribute="leading" secondItem="Fwr-xH-y16" secondAttribute="leadingMargin" id="ZLY-O6-8Hy"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="authorLabel" destination="Tkz-uc-PcG" id="dKb-yG-AA3"/>
-                        <outlet property="quoteImage" destination="Y30-08-YPf" id="J3u-cw-vZA"/>
-                        <outlet property="quoteLabel" destination="MTO-ql-SnU" id="FZd-HR-204"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxG-Mc-Vcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

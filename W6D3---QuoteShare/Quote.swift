@@ -19,4 +19,10 @@ class Quote: NSObject {
 		self.quote = quote
 		self.image = image
 	}
+	
+	
+
+
+
 }
+

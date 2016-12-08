@@ -11,52 +11,47 @@ import AlamofireImage
 
 class QuoteBuilderViewController: UIViewController {
 
+	var quote: Quote?
+	
+	
+	var myQuoteView:QuoteView!
 	
 	weak var delegate: HomeViewController!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		myQuoteView = QuoteView.instanceFromNib()
+		
+		view.insertSubview(myQuoteView, at: 0)
+		myQuoteView.frame = view.bounds
+		
 		changeQuote(nil)
 		changeImage(nil)
-		
-
 	}
-
-
-	
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 	
 	@IBAction func save(_ sender: UIButton) {
-		self.delegate.createNewQuote(author: authorLabel.text!, quote: quoteLabel.text!, image: quoteImage.image!)
+		
+		self.delegate.createNewQuote(author: myQuoteView!.quoteAuthor.text!, quote: myQuoteView!.quoteLabel.text!, image: myQuoteView!.quoteImage.image!)
 	}
 	
 	@IBAction func changeImage(_ sender: UIButton?) {
 		getImage(){(image: UIImage) in
 			DispatchQueue.main.async {
-				self.quoteImage.image = image
+				self.myQuoteView!.quoteImage.image = image
 			}
 		}
-		
-//		quoteImage.af_setImage(
-//			withURL: url,
-//			placeholderImage: placeholderImage,
-//			filter: filter
-//		)
 	}
 
 	@IBAction func changeQuote(_ sender: UIButton?) {
 		getQuote(){(author: String, quote: String) in
 			DispatchQueue.main.async {
 				if author != ""{
-					self.authorLabel.text = author
+					self.myQuoteView!.quoteAuthor.text = author
 				}
 				else{
-					self.authorLabel.text = "Unknown"
+					self.myQuoteView!.quoteAuthor.text = "Unknown"
 				}
-				self.quoteLabel.text = quote
+				self.myQuoteView!.quoteLabel.text = quote
 			}
 		}
 	}
