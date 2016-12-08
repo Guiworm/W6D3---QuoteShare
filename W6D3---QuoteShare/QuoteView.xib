@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuoteView" customModule="W6D3___QuoteShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbj-rW-aqJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chx-TB-HmR">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ey-oE-ept">
+                            <rect key="frame" x="16" y="130" width="343" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="343" id="4zr-EN-r5d"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.86733605859999996" green="0.86929071999999996" blue="0.89911858970000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKV-TQ-YgY">
+                            <rect key="frame" x="16" y="201" width="343" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="343" id="pxs-Bk-yPM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.86563555120000002" green="0.86758638030000002" blue="0.89735576920000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <size key="shadowOffset" width="1" height="1"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mKV-TQ-YgY" firstAttribute="leading" secondItem="xbj-rW-aqJ" secondAttribute="leading" constant="16" id="J7I-xZ-YHY"/>
+                        <constraint firstItem="5Ey-oE-ept" firstAttribute="top" secondItem="xbj-rW-aqJ" secondAttribute="top" constant="130" id="QJh-8P-o2C"/>
+                        <constraint firstItem="mKV-TQ-YgY" firstAttribute="top" secondItem="5Ey-oE-ept" secondAttribute="bottom" constant="40" id="Rkq-Za-bLi"/>
+                        <constraint firstItem="5Ey-oE-ept" firstAttribute="leading" secondItem="xbj-rW-aqJ" secondAttribute="leading" constant="16" id="dJp-sT-xUx"/>
+                        <constraint firstAttribute="trailing" secondItem="mKV-TQ-YgY" secondAttribute="trailing" constant="16" id="eG5-Qh-Ezx"/>
+                        <constraint firstAttribute="trailing" secondItem="5Ey-oE-ept" secondAttribute="trailing" constant="16" id="gwJ-BW-GKO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xbj-rW-aqJ" secondAttribute="trailing" id="9GB-0R-8XW"/>
+                <constraint firstItem="xbj-rW-aqJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="byb-bx-RoX"/>
+                <constraint firstAttribute="bottom" secondItem="xbj-rW-aqJ" secondAttribute="bottom" id="fos-ST-ida"/>
+                <constraint firstItem="xbj-rW-aqJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hxc-6N-JCi"/>
+            </constraints>
+            <connections>
+                <outlet property="quoteAuthor" destination="mKV-TQ-YgY" id="rHc-HS-V7u"/>
+                <outlet property="quoteImage" destination="chx-TB-HmR" id="Zbs-Ge-Snc"/>
+                <outlet property="quoteLabel" destination="5Ey-oE-ept" id="Wao-iT-3hL"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

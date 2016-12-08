@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07D14D01DF86B9C00F9E20A /* QuoteBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D14CF1DF86B9C00F9E20A /* QuoteBuilderViewController.swift */; };
+		A07D14D21DF86D2500F9E20A /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07D14D11DF86D2500F9E20A /* QuoteView.xib */; };
+		A07D14D41DF86DC100F9E20A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D14D31DF86DC100F9E20A /* DataManager.swift */; };
+		A07D14D61DF86E7E00F9E20A /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D14D51DF86E7E00F9E20A /* QuoteView.swift */; };
+		A07D14D81DF8B43600F9E20A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D14D71DF8B43600F9E20A /* Quote.swift */; };
 		A0874ACF1DF8617A0042E45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874ACE1DF8617A0042E45B /* AppDelegate.swift */; };
-		A0874AD11DF8617A0042E45B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874AD01DF8617A0042E45B /* ViewController.swift */; };
+		A0874AD11DF8617A0042E45B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874AD01DF8617A0042E45B /* HomeViewController.swift */; };
 		A0874AD41DF8617A0042E45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0874AD21DF8617A0042E45B /* Main.storyboard */; };
 		A0874AD61DF8617A0042E45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0874AD51DF8617A0042E45B /* Assets.xcassets */; };
 		A0874AD91DF8617A0042E45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0874AD71DF8617A0042E45B /* LaunchScreen.storyboard */; };
+		A0874AE11DF868A40042E45B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0874AE01DF868A40042E45B /* CustomTableViewCell.swift */; };
+		E51A4C6A9E94E87F4D4B7E5E /* Pods_W6D3___QuoteShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B726BD782DFADCFFD3931A6F /* Pods_W6D3___QuoteShare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A07D14CF1DF86B9C00F9E20A /* QuoteBuilderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteBuilderViewController.swift; sourceTree = "<group>"; };
+		A07D14D11DF86D2500F9E20A /* QuoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
+		A07D14D31DF86DC100F9E20A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A07D14D51DF86E7E00F9E20A /* QuoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		A07D14D71DF8B43600F9E20A /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		A0874ACB1DF8617A0042E45B /* W6D3---QuoteShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W6D3---QuoteShare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0874ACE1DF8617A0042E45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0874AD01DF8617A0042E45B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0874AD01DF8617A0042E45B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A0874AD31DF8617A0042E45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0874AD51DF8617A0042E45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0874AD81DF8617A0042E45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0874ADA1DF8617A0042E45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0874AE01DF868A40042E45B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AFFBE5B168082542084D06C3 /* Pods-W6D3---QuoteShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W6D3---QuoteShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-W6D3---QuoteShare/Pods-W6D3---QuoteShare.release.xcconfig"; sourceTree = "<group>"; };
+		B726BD782DFADCFFD3931A6F /* Pods_W6D3___QuoteShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_W6D3___QuoteShare.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF2A9EDE4EAD173EF2709DA /* Pods-W6D3---QuoteShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W6D3---QuoteShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-W6D3---QuoteShare/Pods-W6D3---QuoteShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51A4C6A9E94E87F4D4B7E5E /* Pods_W6D3___QuoteShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71A47289A56DC032041CA629 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B726BD782DFADCFFD3931A6F /* Pods_W6D3___QuoteShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0874AC21DF8617A0042E45B = {
 			isa = PBXGroup;
 			children = (
 				A0874ACD1DF8617A0042E45B /* W6D3---QuoteShare */,
 				A0874ACC1DF8617A0042E45B /* Products */,
+				E43A50CEEB3A00F285C07382 /* Pods */,
+				71A47289A56DC032041CA629 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +82,28 @@
 			isa = PBXGroup;
 			children = (
 				A0874ACE1DF8617A0042E45B /* AppDelegate.swift */,
-				A0874AD01DF8617A0042E45B /* ViewController.swift */,
+				A0874AD01DF8617A0042E45B /* HomeViewController.swift */,
+				A07D14D71DF8B43600F9E20A /* Quote.swift */,
+				A07D14CF1DF86B9C00F9E20A /* QuoteBuilderViewController.swift */,
 				A0874AD21DF8617A0042E45B /* Main.storyboard */,
+				A07D14D11DF86D2500F9E20A /* QuoteView.xib */,
+				A07D14D51DF86E7E00F9E20A /* QuoteView.swift */,
+				A07D14D31DF86DC100F9E20A /* DataManager.swift */,
+				A0874AE01DF868A40042E45B /* CustomTableViewCell.swift */,
 				A0874AD51DF8617A0042E45B /* Assets.xcassets */,
 				A0874AD71DF8617A0042E45B /* LaunchScreen.storyboard */,
 				A0874ADA1DF8617A0042E45B /* Info.plist */,
 			);
 			path = "W6D3---QuoteShare";
+			sourceTree = "<group>";
+		};
+		E43A50CEEB3A00F285C07382 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDF2A9EDE4EAD173EF2709DA /* Pods-W6D3---QuoteShare.debug.xcconfig */,
+				AFFBE5B168082542084D06C3 /* Pods-W6D3---QuoteShare.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0874ADD1DF8617A0042E45B /* Build configuration list for PBXNativeTarget "W6D3---QuoteShare" */;
 			buildPhases = (
+				8B34FEC3A6F7B77CDA22A898 /* [CP] Check Pods Manifest.lock */,
 				A0874AC71DF8617A0042E45B /* Sources */,
 				A0874AC81DF8617A0042E45B /* Frameworks */,
 				A0874AC91DF8617A0042E45B /* Resources */,
+				64C2413849E9CD878E9DC984 /* [CP] Embed Pods Frameworks */,
+				E02FA0835F0BAC9FE260FD24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,17 +171,71 @@
 				A0874AD91DF8617A0042E45B /* LaunchScreen.storyboard in Resources */,
 				A0874AD61DF8617A0042E45B /* Assets.xcassets in Resources */,
 				A0874AD41DF8617A0042E45B /* Main.storyboard in Resources */,
+				A07D14D21DF86D2500F9E20A /* QuoteView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64C2413849E9CD878E9DC984 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-W6D3---QuoteShare/Pods-W6D3---QuoteShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B34FEC3A6F7B77CDA22A898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E02FA0835F0BAC9FE260FD24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-W6D3---QuoteShare/Pods-W6D3---QuoteShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0874AC71DF8617A0042E45B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0874AD11DF8617A0042E45B /* ViewController.swift in Sources */,
+				A0874AE11DF868A40042E45B /* CustomTableViewCell.swift in Sources */,
+				A07D14D61DF86E7E00F9E20A /* QuoteView.swift in Sources */,
+				A07D14D41DF86DC100F9E20A /* DataManager.swift in Sources */,
+				A07D14D81DF8B43600F9E20A /* Quote.swift in Sources */,
+				A0874AD11DF8617A0042E45B /* HomeViewController.swift in Sources */,
+				A07D14D01DF86B9C00F9E20A /* QuoteBuilderViewController.swift in Sources */,
 				A0874ACF1DF8617A0042E45B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,6 +359,7 @@
 		};
 		A0874ADE1DF8617A0042E45B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF2A9EDE4EAD173EF2709DA /* Pods-W6D3---QuoteShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "W6D3---QuoteShare/Info.plist";
@@ -270,6 +372,7 @@
 		};
 		A0874ADF1DF8617A0042E45B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFBE5B168082542084D06C3 /* Pods-W6D3---QuoteShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "W6D3---QuoteShare/Info.plist";
@@ -299,6 +402,7 @@
 				A0874ADF1DF8617A0042E45B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
